@@ -97,5 +97,36 @@ namespace Biblioteca
                 }
             }
         }
+        public Nodo EliminarNodito(Nodo raiz, int d) //gual al insertar pero se quita la insercion y se modifica la recursividad
+        {
+            if (raiz == null)
+            {
+                Console.WriteLine("Valor no encontrado");
+            }
+            else //recorre
+            {
+                if (d < raiz.dato)
+                {
+                    EliminarNodito(raiz.iz, d);
+                }
+                else if (d > raiz.dato)
+                {
+                    EliminarNodito(raiz.de, d);
+                }
+                else //encuentra
+                {
+                    if (raiz.iz == null && raiz.de == null) //condicional para ver que sea hoja
+                    {
+                        Console.WriteLine("Hoja eliminada");
+                        return null;
+                    }
+                    else
+                    {
+                        Console.WriteLine("El nodo no es hoja");
+                    }
+                }
+            }
+            return raiz;
+        }
     }
 }
