@@ -118,7 +118,7 @@ namespace Biblioteca
                     if (raiz.iz == null && raiz.de == null) //condicional para ver que sea hoja
                     {
                         Console.WriteLine("Hoja eliminada");
-                        return null;
+                        raiz= null;
                     }
                     else
                     {
