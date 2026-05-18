@@ -97,7 +97,7 @@ namespace Biblioteca
                 }
             }
         }
-        public Nodo EliminarNodito(Nodo raiz, int d) //gual al insertar pero se quita la insercion y se modifica la recursividad
+        public Nodo EliminarNodito(ref Nodo raiz, int d) //gual al insertar pero se quita la insercion y se modifica la recursividad
         {
             if (raiz == null)
             {
@@ -107,11 +107,11 @@ namespace Biblioteca
             {
                 if (d < raiz.dato)
                 {
-                    EliminarNodito(raiz.iz, d);
+                  EliminarNodito(ref raiz.iz, d);
                 }
                 else if (d > raiz.dato)
                 {
-                    EliminarNodito(raiz.de, d);
+                    EliminarNodito(ref raiz.de, d);
                 }
                 else //encuentra
                 {

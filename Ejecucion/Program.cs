@@ -26,6 +26,7 @@ namespace Ejecucion
                 Console.WriteLine("4. Preorden");
                 Console.WriteLine("5. Postorden");
                 Console.WriteLine("6. Buscar");
+                Console.WriteLine("7. Eliminar hoja");
                 Console.WriteLine("0. Salir");
                 Console.Write("Ingrese una opcion: ");
                 try
@@ -58,9 +59,14 @@ namespace Ejecucion
                             mt.Postorden(mt.raiz_prin);
                             break;
                         case 6:
-                            Console.Write("Ingrese valor  buscar: ");
+                            Console.Write("Ingrese valor buscar: ");
                             int re = int.Parse(Console.ReadLine());
                             mt.Buscar(mt.raiz_prin, re);
+                            break;
+                        case 7:
+                            Console.Write("Ingrese elemento a eliminar: ");
+                            int ri = int.Parse(Console.ReadLine());
+                            mt.EliminarNodito(ref mt.raiz_prin, ri);
                             break;
                         default:
                             Console.WriteLine("Opcion no valida");
