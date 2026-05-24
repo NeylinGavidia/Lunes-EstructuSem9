@@ -1,4 +1,4 @@
 <Solution>
-  <Project Path="Biblioteca/Biblioteca.csproj" />
-  <Project Path="Ejecucion/Ejecucion.csproj" />
+  <Project Path="Biblioteca/Biblioteca.csproj" Id="9dd7484f-0f11-402f-b5a0-cce0f5cbcaf1" />
+  <Project Path="Ejecucion/Ejecucion.csproj" Id="d64409e9-f648-45a6-aa13-87102b432b98" />
 </Solution>
